@@ -55,9 +55,9 @@ module.exports = function(config, allowInsecureHTTP) {
   app.use(express.static(path.join(__dirname,'public')));
 
   // Allow setting via middleware
-  if (config.trustProxy && app.disabled('trust proxy')) {
+  //if (config.trustProxy && app.disabled('trust proxy')) {
     app.enable('trust proxy');
-  }
+  //}
 
   const users = config.users;
   const useEncryptedPasswords = config.useEncryptedPasswords ? true : false;
@@ -86,7 +86,7 @@ module.exports = function(config, allowInsecureHTTP) {
       req.connection.remoteAddress === '127.0.0.1' ||
       req.connection.remoteAddress === '::ffff:127.0.0.1' ||
       req.connection.remoteAddress === '::1';
-    if (!requestIsLocal && !req.secure && !allowInsecureHTTP) {
+    if (!requestIsLocal && !req.secure && !1) {
       //Disallow HTTP requests except on localhost, to prevent the master key from being transmitted in cleartext
       return res.send({ success: false, error: 'Parse Dashboard can only be remotely accessed via HTTPS' });
     }
