@@ -1,10 +1,19 @@
 {
-  "apps": [{
+    "apps": [{
     "serverURL": "http://parseserver-36g6y-env.us-east-1.elasticbeanstalk.com/parse",
     "appId": "aIlPymP0WhoEH6VquFblajmNRDBdeHjTL8bvoUyI",
     "masterKey": "7IqQz2MzVEdbTX7Y5TM45tZ3FW3vLaKWHx6PAREs",
     "appName": "God Dag",
     "iconName": ""
-  }],
-  "iconsFolder": "icons"
+             }],
+    "users": [
+              {
+              "user":"user1",
+              "pass":"pass"
+              },
+              {
+              "user":"user2",
+              "pass":"pass"
+              }
+              ]
 }
