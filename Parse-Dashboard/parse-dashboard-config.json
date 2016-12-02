@@ -1,6 +1,6 @@
 {
     "apps": [{
-    "serverURL": "http://parseserver-36g6y-env.us-east-1.elasticbeanstalk.com/parse",
+    "serverURL": "https://parseserver-36g6y-env.us-east-1.elasticbeanstalk.com/parse",
     "appId": "aIlPymP0WhoEH6VquFblajmNRDBdeHjTL8bvoUyI",
     "masterKey": "7IqQz2MzVEdbTX7Y5TM45tZ3FW3vLaKWHx6PAREs",
     "appName": "God Dag",
