@@ -55,9 +55,9 @@ module.exports = function(config, allowInsecureHTTP) {
   app.use(express.static(path.join(__dirname,'public')));
 
   // Allow setting via middleware
-  //if (config.trustProxy && app.disabled('trust proxy')) {
+  if (config.trustProxy && app.disabled('trust proxy')) {
     app.enable('trust proxy');
-  //}
+  }
 
   const users = config.users;
   const useEncryptedPasswords = config.useEncryptedPasswords ? true : false;

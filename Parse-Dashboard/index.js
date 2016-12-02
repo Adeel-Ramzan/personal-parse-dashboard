@@ -32,7 +32,7 @@ const host = program.host || process.env.HOST || '0.0.0.0';
 const port = program.port || process.env.PORT || 4040;
 const mountPath = program.mountPath || process.env.MOUNT_PATH || '/';
 const allowInsecureHTTP = program.allowInsecureHTTP || process.env.PARSE_DASHBOARD_ALLOW_INSECURE_HTTP;
-const trustProxy = program.trustProxy || process.env.PARSE_DASHBOARD_TRUST_PROXY;
+const trustProxy = true;//program.trustProxy || process.env.PARSE_DASHBOARD_TRUST_PROXY;
 
 if (trustProxy && allowInsecureHTTP) {
   console.log("Set only trustProxy *or* allowInsecureHTTP, not both.  Only one is needed to handle being behind a proxy.");
